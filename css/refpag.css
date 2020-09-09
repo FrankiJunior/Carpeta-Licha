@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.enlaces {
+    position: fixed;
+    display: flex;
+    top: 0;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    transition: all 1s ease ;
+    
+}
+
+
+.uno {
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+   
+}
+.dos {
+    -webkit-clip-path: circle(150% at 0 0);
+    clip-path: circle(150% at 0 0);
+   
+}
+
+@media only screen and (max-width: 1024px) and (orientation:portrait) {
+	.img1 {
+	grid-column: 12/13;
+	
+	width: 30%;
+	padding-bottom:  0em;
+	padding-right: 0.25em;
+
+}
+.x1 {
+	grid-column: 12/13;
+	width: 35%;
+	padding-top: 0em;
+}
+.txt-info img {
+	width: 50%;
+	margin-left: 2em;
+}
+}
